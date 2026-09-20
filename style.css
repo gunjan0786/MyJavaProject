@@ -1,0 +1,1409 @@
+/* =====================================================
+   GENERAL PAGE
+   ===================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #f3e7dc;
+
+    color: #60483d;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+   ===================================================== */
+
+.navbar {
+    height: 76px;
+
+    background-color: #9b7462;
+
+    padding: 0 40px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* Website name */
+
+.navbar-brand {
+    color: #fffaf5 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    margin-left: 35px;
+}
+
+.navbar-brand:hover {
+    color: #fffaf5 !important;
+}
+
+
+/* Navigation links */
+
+.navbar-nav {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 38px;
+
+    margin-right: 35px;
+}
+
+.nav-link {
+    color: #fffaf5 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    padding: 7px 0 !important;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ead7c9 !important;
+}
+
+
+/* Active link */
+
+.nav-link.active {
+    border-bottom: 2px solid #fffaf5;
+}
+
+
+/* =====================================================
+   MAIN SECTION
+   ===================================================== */
+
+.about-section {
+    min-height: calc(100vh - 76px);
+
+    background-color: #f3e7dc;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 65px;
+
+    padding-bottom: 70px;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+
+.about-section .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+.about-section .row {
+    min-height: 600px;
+}
+
+
+/* =====================================================
+   PHOTO
+   ===================================================== */
+
+.photo-column {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.profile-image {
+    width: 355px;
+
+    height: 475px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 6px solid #fffaf5;
+
+    box-shadow:
+        0 8px 25px rgba(91, 65, 50, 0.18);
+}
+
+
+/* =====================================================
+   INTRODUCTION
+   ===================================================== */
+
+.introduction {
+    padding-left: 30px;
+
+    padding-right: 60px;
+}
+
+
+/* Small heading */
+
+.small-title {
+    color: #a27c68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 17px;
+}
+
+
+/* Main heading */
+
+.introduction h1 {
+    color: #51392f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 60px;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin: 0 0 18px 0;
+}
+
+
+/* Student title */
+
+.introduction h3 {
+    color: #795b4b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin: 0 0 20px 0;
+}
+
+
+/* College */
+
+.introduction h4 {
+    color: #795b4b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin: 0 0 32px 0;
+}
+
+
+/* Introduction paragraphs */
+
+.introduction p:not(.small-title) {
+    color: #644f44;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+
+    max-width: 700px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   MEET MY RABBIT BUTTON
+   ===================================================== */
+
+.rabbit-button {
+    position: absolute;
+
+    right: 75px;
+
+    bottom: 38px;
+
+    background-color: #a77d68;
+
+    color: #fffaf5;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+    z-index: 5;
+}
+
+.rabbit-button:hover {
+    background-color: #896452;
+
+    color: #fffaf5;
+}
+
+
+/* =====================================================
+   DOODLES
+   ===================================================== */
+
+.doodles {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.doodle {
+    position: absolute;
+
+    color: #9d7561;
+
+    opacity: 0.75;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* Left upper leaf */
+
+.leaf {
+    left: 48px;
+
+    top: 40px;
+
+    font-size: 60px;
+
+    transform: rotate(-30deg);
+}
+
+
+/* Small heart near introduction */
+
+.heart-top {
+    left: 47%;
+
+    top: 58px;
+
+    font-size: 30px;
+}
+
+
+/* Top right sparkle */
+
+.sparkle-top {
+    right: 65px;
+
+    top: 43px;
+
+    font-size: 30px;
+}
+
+
+/* Paper plane */
+
+.paper-plane {
+    right: 100px;
+
+    top: 25px;
+
+    font-size: 45px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* Right heart */
+
+.heart-right {
+    right: 105px;
+
+    top: 145px;
+
+    font-size: 40px;
+}
+
+
+/* Right leaf */
+
+.leaf-right {
+    right: 50px;
+
+    top: 275px;
+
+    font-size: 55px;
+
+    transform: rotate(25deg);
+}
+
+
+/* Bottom flower */
+
+.flower-bottom {
+    left: 65px;
+
+    bottom: 50px;
+
+    font-size: 38px;
+}
+
+
+/* Left sparkle */
+
+.sparkle-left {
+    left: 45px;
+
+    bottom: 110px;
+
+    font-size: 27px;
+}
+
+
+/* Bottom heart */
+
+.heart-bottom {
+    left: 39%;
+
+    bottom: 45px;
+
+    font-size: 34px;
+}
+
+
+/* Bottom sparkle */
+
+.sparkle-bottom {
+    left: 14%;
+
+    bottom: 25px;
+
+    font-size: 28px;
+}
+
+
+/* Rabbit doodle */
+
+.rabbit {
+    right: 48px;
+
+    bottom: 32px;
+
+    font-size: 48px;
+
+    transform: rotate(10deg);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background-color: #9b7462;
+
+    color: #fffaf5;
+
+    text-align: center;
+
+    padding: 14px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+footer p {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+
+        margin-right: 0;
+
+        flex-direction: column;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    .about-section {
+        padding-top: 40px;
+
+        padding-bottom: 100px;
+    }
+
+
+    .about-section .row {
+        min-height: auto;
+    }
+
+
+    .photo-column {
+        margin-bottom: 40px;
+    }
+
+
+    .profile-image {
+        width: 280px;
+
+        height: 380px;
+    }
+
+
+    .introduction {
+        padding: 0 25px;
+    }
+
+
+    .introduction h1 {
+        font-size: 43px;
+    }
+
+
+    .introduction h3 {
+        font-size: 24px;
+    }
+
+
+    .introduction h4 {
+        font-size: 21px;
+    }
+
+
+    .introduction p:not(.small-title) {
+        font-size: 16px;
+    }
+
+
+    .rabbit-button {
+        right: 20px;
+
+        bottom: 25px;
+    }
+
+
+    /* Make doodles slightly smaller */
+
+    .doodle {
+        transform: scale(0.7);
+        opacity: 0.55;
+    }
+
+}
+
+
+
+
+/* =====================================================
+   PAGE 2 — MOCHI
+   ===================================================== */
+
+.pet-section {
+    min-height: calc(100vh - 76px);
+
+    background-color: #f3e7dc;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 65px;
+
+    padding-bottom: 70px;
+}
+
+
+/* ================= PET CONTENT ================= */
+
+.pet-section .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.pet-section .row {
+    min-height: 600px;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.pet-introduction {
+    padding-left: 70px;
+
+    padding-right: 35px;
+}
+
+
+.pet-small-title {
+    color: #a27c68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+.pet-introduction h1 {
+    color: #51392f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+
+.pet-introduction h3 {
+    color: #795b4b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+
+.pet-introduction > p:not(.pet-small-title) {
+    color: #644f44;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================= MOCHI'S FAVOURITES ================= */
+
+.mochi-favourites {
+    margin-top: 25px;
+}
+
+
+.mochi-favourites h4 {
+    color: #795b4b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+.mochi-favourites ul {
+    padding-left: 22px;
+
+    margin: 0;
+}
+
+
+.mochi-favourites li {
+    color: #644f44;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= RABBIT IMAGE ================= */
+
+.pet-image-column {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-right: 65px;
+}
+
+
+.rabbit-frame {
+    width: 380px;
+
+    height: 480px;
+
+    background-color: #fffaf5;
+
+    padding: 8px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(91, 65, 50, 0.18);
+}
+
+
+.rabbit-image {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    display: block;
+}
+
+
+/* ================= FUN TIME BUTTON ================= */
+
+.fun-button {
+    position: absolute;
+
+    right: 75px;
+
+    bottom: 38px;
+
+    background-color: #a77d68;
+
+    color: #fffaf5;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+    z-index: 5;
+}
+
+
+.fun-button:hover {
+    background-color: #896452;
+
+    color: #fffaf5;
+}
+
+
+/* ================= PAGE 2 DOODLES ================= */
+
+.pet-doodles {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.pet-doodle {
+    position: absolute;
+
+    color: #9d7561;
+
+    opacity: 0.70;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* Top-left */
+
+.pet-leaf {
+    left: 55px;
+
+    top: 50px;
+
+    font-size: 55px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* Top-center */
+
+.pet-heart-top {
+    left: 48%;
+
+    top: 45px;
+
+    font-size: 32px;
+}
+
+
+/* Top-right */
+
+.pet-sparkle-top {
+    right: 70px;
+
+    top: 60px;
+
+    font-size: 30px;
+}
+
+
+/* Left-middle */
+
+.pet-flower {
+    left: 55px;
+
+    top: 45%;
+
+    font-size: 36px;
+}
+
+
+/* Left-bottom */
+
+.pet-heart-left {
+    left: 95px;
+
+    bottom: 70px;
+
+    font-size: 35px;
+}
+
+
+/* Right-middle */
+
+.pet-sparkle {
+    right: 70px;
+
+    top: 45%;
+
+    font-size: 28px;
+}
+
+
+/* Bottom-center */
+
+.pet-heart-bottom {
+    left: 45%;
+
+    bottom: 40px;
+
+    font-size: 34px;
+}
+
+
+/* Right-bottom */
+
+.pet-leaf-right {
+    right: 40px;
+
+    bottom: 110px;
+
+    font-size: 55px;
+
+    transform: rotate(25deg);
+}
+
+
+/* =====================================================
+   PAGE 2 — MOBILE
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    .pet-section {
+        padding-top: 40px;
+
+        padding-bottom: 110px;
+    }
+
+
+    .pet-section .row {
+        min-height: auto;
+    }
+
+
+    .pet-introduction {
+        padding: 0 25px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .pet-introduction h1 {
+        font-size: 43px;
+    }
+
+
+    .pet-introduction h3 {
+        font-size: 23px;
+    }
+
+
+    .pet-introduction > p:not(.pet-small-title) {
+        font-size: 16px;
+    }
+
+
+    .pet-image-column {
+        padding: 0 25px;
+    }
+
+
+    .rabbit-frame {
+        width: 290px;
+
+        height: 380px;
+    }
+
+
+    .fun-button {
+        right: 20px;
+
+        bottom: 25px;
+    }
+
+
+    .pet-doodle {
+        transform: scale(0.7);
+
+        opacity: 0.5;
+    }
+
+}
+
+
+/* =====================================================
+   PAGE 3 — MOCHI'S FUN TIME
+   ===================================================== */
+
+.fun-section {
+    min-height: calc(100vh - 76px);
+
+    background-color: #f3e7dc;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 65px;
+
+    padding-bottom: 70px;
+}
+
+
+/* ================= CONTENT ================= */
+
+.fun-section .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.fun-section .row {
+    min-height: 600px;
+}
+
+
+/* ================= RABBIT IMAGE ================= */
+
+.fun-image-column {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.fun-image-frame {
+    width: 390px;
+
+    height: 500px;
+
+    background-color: #fffaf5;
+
+    padding: 8px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(91, 65, 50, 0.18);
+}
+
+
+.fun-rabbit-image {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    display: block;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.fun-introduction {
+    padding-left: 30px;
+
+    padding-right: 55px;
+}
+
+
+.fun-small-title {
+    color: #a27c68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+.fun-introduction h1 {
+    color: #51392f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+
+.fun-introduction h3 {
+    color: #795b4b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+
+.fun-introduction > p:not(.fun-small-title) {
+    color: #644f44;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    max-width: 680px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================= MOCHI LOVES ================= */
+
+.fun-favourites {
+    margin-top: 25px;
+}
+
+
+.favourite-title {
+    color: #795b4b !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px !important;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px !important;
+}
+
+
+.fun-favourites ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.fun-favourites li {
+    color: #644f44;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 3px;
+}
+
+
+.fun-favourites li::before {
+    content: "♥";
+
+    color: #98705d;
+
+    margin-right: 13px;
+
+    font-size: 14px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.world-button {
+    position: absolute;
+
+    right: 75px;
+
+    bottom: 38px;
+
+    background-color: #a77d68;
+
+    color: #fffaf5;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+    z-index: 5;
+}
+
+
+.world-button:hover {
+    background-color: #896452;
+
+    color: #fffaf5;
+}
+
+
+/* ================= DOODLES ================= */
+
+.fun-doodles {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.fun-doodle {
+    position: absolute;
+
+    color: #9d7561;
+
+    opacity: 0.70;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* Top left */
+
+.flower-top {
+    left: 45px;
+
+    top: 40px;
+
+    font-size: 40px;
+}
+
+
+/* Top center */
+
+.sparkle-top {
+    left: 47%;
+
+    top: 35px;
+
+    font-size: 30px;
+}
+
+
+/* Top right */
+
+.paper-plane {
+    right: 85px;
+
+    top: 30px;
+
+    font-size: 45px;
+
+    transform: rotate(-20deg);
+}
+
+
+/* Left middle */
+
+.sparkle-left {
+    left: 35px;
+
+    top: 43%;
+
+    font-size: 30px;
+}
+
+
+/* Left lower */
+
+.leaf-left {
+    left: 60px;
+
+    bottom: 110px;
+
+    font-size: 55px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* Bottom center */
+
+.heart-bottom {
+    left: 42%;
+
+    bottom: 40px;
+
+    font-size: 35px;
+}
+
+
+/* Bottom left/center */
+
+.sparkle-bottom {
+    left: 13%;
+
+    bottom: 35px;
+
+    font-size: 28px;
+}
+
+
+/* Right middle */
+
+.leaf-right {
+    right: 45px;
+
+    top: 48%;
+
+    font-size: 55px;
+
+    transform: rotate(25deg);
+}
+
+
+/* Right upper-middle */
+
+.heart-right {
+    right: 100px;
+
+    top: 160px;
+
+    font-size: 35px;
+}
+
+
+/* Bottom right bunny */
+
+.bunny-doodle {
+    right: 45px;
+
+    bottom: 100px;
+
+    font-size: 45px;
+
+    transform: rotate(10deg);
+}
+
+
+/* =====================================================
+   PAGE 3 — MOBILE
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    .fun-section {
+        padding-top: 40px;
+
+        padding-bottom: 110px;
+    }
+
+
+    .fun-section .row {
+        min-height: auto;
+    }
+
+
+    .fun-image-column {
+        margin-bottom: 45px;
+    }
+
+
+    .fun-image-frame {
+        width: 290px;
+
+        height: 380px;
+    }
+
+
+    .fun-introduction {
+        padding: 0 25px;
+    }
+
+
+    .fun-introduction h1 {
+        font-size: 43px;
+    }
+
+
+    .fun-introduction h3 {
+        font-size: 23px;
+    }
+
+
+    .fun-introduction > p:not(.fun-small-title) {
+        font-size: 16px;
+    }
+
+
+    .fun-favourites li {
+        font-size: 16px;
+    }
+
+
+    .world-button {
+        right: 20px;
+
+        bottom: 25px;
+    }
+
+
+    .fun-doodle {
+        transform: scale(0.7);
+
+        opacity: 0.5;
+    }
+
+}
